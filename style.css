@@ -1,0 +1,178 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header Styles */
+header {
+  background: #000;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+header ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+header button {
+  background: yellow;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Hero Section */
+#hero {
+  display: flex; /* Content ko side-by-side lane ke liye */
+  align-items: center; /* Vertical alignment center */
+  justify-content: space-between; /* Space evenly divide karne ke liye */
+  padding: 50px 20px;
+  background: #f9f9f9; /* Background color */
+}
+
+.hero-content {
+  flex: 1; /* Content ko ek portion dena */
+  max-width: 50%; /* Text ki width limit karna */
+}
+
+.hero-content h1 {
+  font-size: 2.5rem; /* Heading ka size */
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.hero-content button {
+  background: yellow;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.hero-image {
+  flex: 1; /* Image ko ek portion dena */
+  display: flex;
+  justify-content: center; /* Center align image */
+}
+
+.hero-image img {
+  max-width: 100%; /* Image ki width responsive banai */
+  height: auto; /* Aspect ratio maintain karna */
+  border-radius: 10px; /* Thoda rounded effect dena */
+}
+
+/* Features Section */
+#features {
+  padding: 20px;
+  text-align: center;
+  background: #f9f9f9; /* Background color */
+}
+
+#features h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.features-container {
+  display: flex; /* Flexbox ka use karna */
+  justify-content: space-between; /* Articles ke beech space dena */
+  gap: 20px; /* Articles ke beech ka gap */
+  flex-wrap: wrap; /* Responsive design ke liye wrap enable */
+}
+
+.features-container article {
+  flex: 1; /* Har article ko equal space dena */
+  max-width: 30%; /* Maximum width har article ki */
+  background: #fff; /* White background for articles */
+  padding: 20px;
+  border: 1px solid #ccc; /* Border for styling */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for better design */
+  text-align: left; /* Left-align text */
+}
+
+.features-container article h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.features-container article p {
+  font-size: 1rem;
+ color: #666;
+}
+
+/* Custom Section */
+#custom-section {
+  display: flex; /* Flexbox ka use karna */
+  align-items: center; /* Vertical alignment center */
+  justify-content: space-between; /* Space evenly divide karna */
+  padding: 20px;
+  background: #f9f9f9; /* Optional background color */
+  gap: 20px; /* Text aur image ke beech ka gap */
+}
+
+/* Text Content Styling */
+.text-content {
+  flex: 1; /* Text ko ek equal portion dena */
+  max-width: 50%; /* Text ki maximum width */
+}
+
+.text-content h2 {
+  font-size: 2rem; /* Heading size */
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.text-content p {
+  font-size: 1rem; /* Paragraph size */
+  color: #666;
+}
+
+/* Image Content Styling */
+.image-content {
+  flex: 1; 
+  max-width: 50%; 
+  display: flex;
+  justify-content: center; 
+}
+
+.image-content img {
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 8px; 
+}
+
+@media (max-width: 768px) {
+  #custom-section {
+      flex-direction: column; /* Mobile view mein vertically stack karna */
+      text-align: center; /* Center align text */
+  }
+
+  .text-content, .image-content {
+      max-width: 100%; 
+    }
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 10px;
+  background: #000;
+  color: #fff;
+}
